@@ -1,0 +1,18 @@
+{
+  "name": "tg-chess",
+  "version": "1.0.0",
+  "description": "Шахматы для Telegram: Mini App с рейтингом, таблицей лидеров, дуэлями и игрой против компьютера",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.5"
+  },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning server/index.js",
+    "dev": "DEV_MODE=1 node --disable-warning=ExperimentalWarning server/index.js",
+    "test": "node --disable-warning=ExperimentalWarning test/rules.test.js"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}
